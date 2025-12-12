@@ -1,0 +1,12 @@
+.text-impressum {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 15px;
+      }
+    }
