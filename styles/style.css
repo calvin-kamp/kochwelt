@@ -1,39 +1,236 @@
-html {
+/* -------------------------------------------------------- */
+/*                       GLOBAL STYLES                      */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/*                       RESET STYLES                       */
+/* -------------------------------------------------------- */
 
+/* Base Reset for common elements */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, button, p, a, input, textarea, select, output, svg, blockquote, main, pre, abbr, address, cite, code, del, em, img, ins, kbd, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, nav, section, summary, time, mark, audio, video, template {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+html::before, html::after, body::before, body::after, div::before, div::after, span::before, span::after, iframe::before, iframe::after, h1::before, h1::after, h2::before, h2::after, h3::before, h3::after, h4::before, h4::after, h5::before, h5::after, h6::before, h6::after, button::before, button::after, p::before, p::after, a::before, a::after, input::before, input::after, textarea::before, textarea::after, select::before, select::after, output::before, output::after, svg::before, svg::after, blockquote::before, blockquote::after, main::before, main::after, pre::before, pre::after, abbr::before, abbr::after, address::before, address::after, cite::before, cite::after, code::before, code::after, del::before, del::after, em::before, em::after, img::before, img::after, ins::before, ins::after, kbd::before, kbd::after, q::before, q::after, small::before, small::after, strong::before, strong::after, sub::before, sub::after, sup::before, sup::after, dl::before, dl::after, dt::before, dt::after, dd::before, dd::after, ol::before, ol::after, ul::before, ul::after, li::before, li::after, form::before, form::after, fieldset::before, fieldset::after, label::before, label::after, legend::before, legend::after, table::before, table::after, caption::before, caption::after, tbody::before, tbody::after, tfoot::before, tfoot::after, thead::before, thead::after, tr::before, tr::after, th::before, th::after, td::before, td::after, article::before, article::after, aside::before, aside::after, canvas::before, canvas::after, details::before, details::after, figcaption::before, figcaption::after, figure::before, figure::after, footer::before, footer::after, header::before, header::after, nav::before, nav::after, section::before, section::after, summary::before, summary::after, time::before, time::after, mark::before, mark::after, audio::before, audio::after, video::before, video::after, template::before, template::after {
+    box-sizing: inherit; 
+}
+
+/* Block-level elements */
+/* Ensure proper block rendering in older browsers */
+main, section, article, aside, nav, footer, header, figure, figcaption, details, textarea {
+    display: block;
+}
+
+/* Tables */
+/* Ensure proper table behavior */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Table Columns */
+/* Ensure consistent column behavior */
+colgroup, col {
+    border: 0;
+}
+
+/* Blockquotes and quotes */
+/* Remove default quotes */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+    content: none;
+}
+
+/* Images */
+/* Ensure images are responsive */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Summary */
+/* Standardize cursor and interaction styles */
+summary {
+    list-style: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Fieldset */
+/* Remove default styles */
+fieldset {
+    min-width: 0;
+}
+
+/* Legend */
+/* Standardize alignment and spacing */
+legend {
+    display: table;
+}
+
+/* Abbreviations */
+/* Standardize abbreviation styling */
+abbr[title] {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+/* Time */
+/* Ensure consistent appearance */
+time {
+    font-style: italic;
+}
+
+/* Forms */
+/* Normalize input, button, textarea, select */
+input, button, textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input:focus, input:focus-visible, button:focus, button:focus-visible, textarea:focus, textarea:focus-visible, select:focus, select:focus-visible {
+    outline: 0;
+}
+
+input[disabled], button[disabled], textarea[disabled], select[disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Number Inputs */
+/* Remove spinner controls */
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Textareas */
+/* Disable resizing and ensure scrollbars */
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+/* Progress */
+/* Ensure consistent appearance */
+progress {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Output */
+/* Standardize output appearance */
+output {
+    display: inline-block;
+}
+
+/* Links */
+/* Remove default styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus, a:hover, a:active {
+    outline: none;
+}
+
+/* Buttons */
+/* Fix inner padding in older Firefox */
+button {
+    overflow: visible;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Audio */
+/* Hide audio elements without controls */
+audio:not([controls]) {
+    display: none;
+    visibility: hidden;
+}
+
+/* SVG */
+/* Prevent overflow issues */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Template */
+/* Hide content in template elements */
+template {
+    display: none;
+}
+
+/* HTML Adjustments */
+/* Optimize font rendering and prevent scaling */
+html {
+    font-size: 100%;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    /* Prevent mobile tap highlight */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* -------------------------------------------------------- */
+/*                  COLOR SCHEME VARIABLES                  */
+/* -------------------------------------------------------- */
+
+/* Define CSS Variables */
+:root {
+    /* Color Scheme */
+    --color-white:              #FFFFFF;
+    --color-black:              #000000;
+
+    --color-primary:            #123123;
+    --color-primary-hover:      #123123;
+
+    --color-body-font:          #000000;
+    --color-body-background:    #FFFFFF;
+
+    /* Typography */
+    --font-size-body:           16px;
+    --font-size-h1:             26px;
+    --font-size-h2:             22px;
+}
+
+/* -------------------------------------------------------- */
+/*                          REBOOT                          */
+/* -------------------------------------------------------- */
+
+html {
+    line-height: 1.5;
 }
 
 body {
-
-}
-
-h1, .h1 {
-    
-}
-
-h2, .h2 {
-
-}
-
-h3, .h3 {
-
-}
-
-h4, .h4 {
-
-}
-
-h5, .h5 {
-
-}
-
-h6, .h6 {
-
-}
-
-a, .link {
-
-}
-
-button, .button {
-
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    color: var(--color-body-font);
+    background-color: var(--color-body-background);
 }
