@@ -1,0 +1,127 @@
+.header {
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.header .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.header .header__logo {
+    display: block;
+}
+
+.header .header__logo::before {
+    content: none;
+}
+
+.header .header__logo img {
+    width: 180px;
+}
+
+.header .header__nav-toggle {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.header .header__nav-toggle span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 1px;
+    background-color: var(--color-black);
+    transition: all var(--transition-time) ease-in-out;
+}
+
+.header .header__nav-toggle span:first-of-type {
+    top: 35%;
+}
+
+.header .header__nav-toggle span:nth-of-type(2) {
+    top: 50%;
+}
+
+.header .header__nav-toggle span:last-of-type {
+    top: 65%;
+}
+
+.header .header__navigation {
+    position: fixed;
+    top: 54px;
+    right: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: calc(100vh - 54px);
+    text-align: center;
+    transition: all var(--transition-time) ease-in-out;
+}
+
+.header .header__navigation ul {
+    padding: 64px 0;
+}
+
+.header .header__navigation li {
+    margin-bottom: 32px;
+}
+
+.header .header__navigation li:last-of-type {
+    margin-bottom: 0;
+}
+
+.header.header--navigation-open .header__nav-toggle span:first-of-type {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header.header--navigation-open .header__nav-toggle span:nth-of-type(2) {
+    transform: translate(-65%, -50%);
+    opacity: 0;
+}
+
+.header.header--navigation-open .header__nav-toggle span:last-of-type {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header.header--navigation-open .header__navigation {
+    transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+    .header .header__wrapper {
+        padding: 16px 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header .header__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .header .header__nav-toggle {
+        display: none;
+    }
+
+    .header .header__navigation {
+        display: block;
+        position: static;
+        transform: translateX(0);
+        width: auto;
+        height: auto;
+    }
+
+    .header .header__navigation ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .header .header__navigation li {
+        margin: 0 0 0 24px;
+    }
+}
