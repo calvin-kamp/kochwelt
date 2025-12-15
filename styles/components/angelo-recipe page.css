@@ -1,0 +1,15 @@
+.zutatenliste {
+  max-width: 1440px;
+  list-style: none;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.zutatenliste li {
+  padding: 12px 20px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+.zutatenliste li:nth-child(even) {
+  background-color: #f2f2f2;
+ 
+}
