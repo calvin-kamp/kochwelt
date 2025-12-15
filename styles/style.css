@@ -7,7 +7,7 @@
 
 /* Base Reset for common elements */
 html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, button, p, a, input, textarea, select, output, svg, blockquote, main, pre, abbr, address, cite, code, del, em, img, ins, kbd, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, nav, section, summary, time, mark, audio, video, template {
-    margin: 0;
+margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
@@ -207,9 +207,10 @@ html {
     /* Color Scheme */
     --color-white:              #FFFFFF;
     --color-black:              #000000;
+    --color-grey:               #cccccc;
 
-    --color-primary:            #123123;
-    --color-primary-hover:      #123123;
+    --color-primary:            #008000;
+    --color-primary-hover:      #006600;
 
     --color-body-font:          #000000;
     --color-body-background:    #FFFFFF;
@@ -218,6 +219,37 @@ html {
     --font-size-body:           16px;
     --font-size-h1:             26px;
     --font-size-h2:             22px;
+
+    --font-weight-100:          100;
+    --font-weight-200:          200;
+    --font-weight-300:          300;
+    --font-weight-400:          400;
+    --font-weight-500:          500;
+    --font-weight-600:          600;
+    --font-weight-700:          700;
+    --font-weight-800:          800;
+    --font-weight-900:          900;
+
+    --font-family-body:         'Raleway';
+
+    /* Other */
+    --transition-time:          0.4s;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --font-size-body:           18px;
+        --font-size-h1:             34px;
+        --font-size-h2:             26px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    :root {
+        --font-size-body:           20px;
+        --font-size-h1:             42px;
+        --font-size-h2:             30px;
+    }
 }
 
 /* -------------------------------------------------------- */
@@ -233,4 +265,65 @@ body {
     font-size: var(--font-size-body);
     color: var(--color-body-font);
     background-color: var(--color-body-background);
+}
+
+h1, h2 {
+    font-weight: var(--font-weight-700);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+header, section, footer {
+    padding: 0px 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a, .link {
+    position: relative;
+    font-weight: var(--font-weight-500);
+    transition: all var(--transition-time) ease-in-out;
+}
+
+a:hover, .link:hover, .link--is-active {
+    color: var(--color-primary-hover);
+}
+
+a.link--is-active, .link.link--is-active {
+    font-weight: var(--font-weight-700);
+}
+
+a::before, .link::before, .link--is-active::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary-hover);
+    transition: all var(--transition-time) ease-in-out;
+    content: "";
+}
+
+a:hover::before, .link:hover::before, .link--is-active::before {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    header, section, footer {
+        padding: 0px 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header, section, footer {
+        padding: 0px 32px;
+    }
 }
