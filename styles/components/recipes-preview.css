@@ -7,7 +7,7 @@
 .recipe-preview__inner {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 27px 44px 64px;
+  padding: 27px 120px 64px;
   display:flex;
   flex-direction: column;
   gap: 24px;
@@ -41,7 +41,7 @@
  
 .recipe-preview__list{
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
    gap: clamp(40px, 8vw, 150px);
   }
 }
