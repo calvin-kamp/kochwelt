@@ -7,7 +7,7 @@
 
 /* Base Reset for common elements */
 html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, button, p, a, input, textarea, select, output, svg, blockquote, main, pre, abbr, address, cite, code, del, em, img, ins, kbd, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, nav, section, summary, time, mark, audio, video, template {
-    margin: 0;
+margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
@@ -218,6 +218,24 @@ html {
     --font-size-body:           16px;
     --font-size-h1:             26px;
     --font-size-h2:             22px;
+
+    --font-family-body:         'Raleway';
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --font-size-body:           18px;
+        --font-size-h1:             34px;
+        --font-size-h2:             26px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    :root {
+        --font-size-body:           20px;
+        --font-size-h1:             42px;
+        --font-size-h2:             30px;
+    }
 }
 
 /* -------------------------------------------------------- */
