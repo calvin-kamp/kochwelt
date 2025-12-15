@@ -77,6 +77,29 @@
   border-radius: 20px;
   display: inline-block;
 }
+.page-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+.creator-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 280px;
+}
+.creator-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+.creator-text {
+  display: flex;
+  flex-direction: column;
+}
 @media (max-width: 600px) {
   .meta-wrapper {
     flex-direction: column;
