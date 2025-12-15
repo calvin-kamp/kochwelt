@@ -207,9 +207,10 @@ html {
     /* Color Scheme */
     --color-white:              #FFFFFF;
     --color-black:              #000000;
+    --color-grey:               #cccccc;
 
-    --color-primary:            #123123;
-    --color-primary-hover:      #123123;
+    --color-primary:            #008000;
+    --color-primary-hover:      #006600;
 
     --color-body-font:          #000000;
     --color-body-background:    #FFFFFF;
@@ -230,6 +231,9 @@ html {
     --font-weight-900:          900;
 
     --font-family-body:         'Raleway';
+
+    /* Other */
+    --transition-time:          0.4s;
 }
 
 @media screen and (min-width: 768px) {
@@ -273,4 +277,53 @@ h1 {
 
 h2 {
     font-size: var(--font-size-h2);
+}
+
+header, section, footer {
+    padding: 0px 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a, .link {
+    position: relative;
+    font-weight: var(--font-weight-500);
+    transition: all var(--transition-time) ease-in-out;
+}
+
+a:hover, .link:hover, .link--is-active {
+    color: var(--color-primary-hover);
+}
+
+a.link--is-active, .link.link--is-active {
+    font-weight: var(--font-weight-700);
+}
+
+a::before, .link::before, .link--is-active::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary-hover);
+    transition: all var(--transition-time) ease-in-out;
+    content: "";
+}
+
+a:hover::before, .link:hover::before, .link--is-active::before {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    header, section, footer {
+        padding: 0px 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header, section, footer {
+        padding: 0px 32px;
+    }
 }
