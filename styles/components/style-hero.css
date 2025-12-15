@@ -8,7 +8,7 @@
 .hero__inner{
   max-width: 1200px;         
   margin: 0 auto;
-  padding: 27px 44px 64px;   
+  padding: 27px 120px 64px;   
   display: flex;
   flex-direction: column;
   gap: 32px;
