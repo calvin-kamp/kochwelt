@@ -49,9 +49,13 @@
 .footer .footer__socials a {
     position: relative;
     display: inline-flex;
-    width: 36px;
-    height: 36px;
+    width: 48px;
+    height: 48px;
     color: var(--color-primary);
+}
+
+.footer .footer__socials a::before {
+    content: none;
 }
 
 .footer .footer__socials svg {
@@ -63,7 +67,7 @@
     height: auto;
 }
 
-.footer .footer__socials path:last-of-type {
+.footer .footer__socials path {
     fill: currentColor;
 }
 
@@ -121,6 +125,11 @@
         justify-content: flex-end;
     }
 
+    
+    .footer .footer__socials li {
+        margin: 0 0 0 16px;
+    }
+
     .footer .footer__legal {
         text-align: right;
     }
@@ -131,8 +140,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .footer {}
-
     .footer .footer__wrapper {
         padding: 32px 0;
         max-width: 1440px;
