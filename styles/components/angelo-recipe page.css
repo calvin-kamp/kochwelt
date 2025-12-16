@@ -209,3 +209,151 @@
         margin: 0 0 0 24px;
     }
 }
+.footer {
+    text-align: center;
+    background-color: var(--color-grey);
+}
+
+.footer .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 0;
+}
+
+.footer .footer__logo {
+    display: none;
+}
+
+.footer .footer__wrapper>div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer .footer__navigation {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.footer .footer__navigation li {
+    margin-bottom: 8px;
+}
+
+.footer .footer__navigation li:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer .footer__socials {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.footer .footer__socials ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer__socials li {
+    margin: 0 8px;
+}
+
+.footer .footer__socials a {
+    position: relative;
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    color: var(--color-primary);
+}
+
+.footer .footer__socials a::before {
+    content: none;
+}
+
+.footer .footer__socials svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: auto;
+}
+
+.footer .footer__socials path {
+    fill: currentColor;
+}
+
+.footer .footer__socials a:hover {
+    color: var(--color-primary-hover);
+}
+
+.footer .footer__socials a:hover::before {
+    content: none;
+}
+
+.footer .footer__legal {
+    width: 100%;
+}
+
+.footer .footer__legal small {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        background-color: var(--color-grey);
+    }
+
+    .footer .footer__wrapper {
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .footer .footer__wrapper>div {
+        width: 50%;
+        align-content: space-between;
+    }
+
+    .footer .footer__logo {
+        display: block;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .footer .footer__logo::before {
+        content: none;
+    }
+
+    .footer .footer__logo img {
+        width: 280px;
+    }
+
+    .footer .footer__navigation {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .footer .footer__socials ul {
+        justify-content: flex-end;
+    }
+
+    
+    .footer .footer__socials li {
+        margin: 0 0 0 16px;
+    }
+
+    .footer .footer__legal {
+        text-align: right;
+    }
+
+    .footer .header__wrapper {
+        padding: 16px 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer .footer__wrapper {
+        padding: 32px 0;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
