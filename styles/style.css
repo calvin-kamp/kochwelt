@@ -217,8 +217,11 @@ html {
 
     /* Typography */
     --font-size-body:           16px;
-    --font-size-h1:             26px;
-    --font-size-h2:             22px;
+    --font-size-h1:             30px;
+    --font-size-h2:             24px;
+
+    --line-height-body:         1.5;
+    --line-height-headline:     1.2;
 
     --font-weight-100:          100;
     --font-weight-200:          200;
@@ -239,16 +242,16 @@ html {
 @media screen and (min-width: 768px) {
     :root {
         --font-size-body:           18px;
-        --font-size-h1:             34px;
-        --font-size-h2:             26px;
+        --font-size-h1:             40px;
+        --font-size-h2:             28px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     :root {
         --font-size-body:           20px;
-        --font-size-h1:             42px;
-        --font-size-h2:             30px;
+        --font-size-h1:             52px;
+        --font-size-h2:             34px;
     }
 }
 
@@ -256,19 +259,17 @@ html {
 /*                          REBOOT                          */
 /* -------------------------------------------------------- */
 
-html {
-    line-height: 1.5;
-}
-
 body {
     font-family: var(--font-family-body);
     font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
     color: var(--color-body-font);
     background-color: var(--color-body-background);
 }
 
 h1, h2 {
     font-weight: var(--font-weight-700);
+    line-height: var(--line-height-headline);
 }
 
 h1 {
@@ -279,12 +280,51 @@ h2 {
     font-size: var(--font-size-h2);
 }
 
-header, section, footer {
+header, main, footer {
     padding: 0px 16px;
+}
+
+section {
+    padding: 24px 0;
+}
+
+img {
+    width: 100%;
+    shape-margin: 1em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: italic;
+    border-radius: 12px;
+}
+
+svg {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 ul {
     list-style: none;
+}
+
+button, .button {
+    display: inline-block;
+    height: 44px;
+    padding: 0 24px;
+    line-height: 44px;
+    border: 1px solid transparent;
+    transition: all var(--transition-time) ease-in-out;
+}
+
+.button--primary {
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+}
+
+.button--primary:hover {
+    background-color: var(--color-primary-hover);
 }
 
 a, .link {
@@ -317,13 +357,25 @@ a:hover::before, .link:hover::before, .link--is-active::before {
 }
 
 @media screen and (min-width: 768px) {
-    header, section, footer {
+    header, main, footer {
         padding: 0px 24px;
+    }
+
+    section {
+        padding: 48px 0;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    header, section, footer {
+    header, main, footer {
         padding: 0px 32px;
+    }
+
+    section {
+        padding: 72px 0;
+    }
+
+    img {
+        border-radius: 16px;
     }
 }

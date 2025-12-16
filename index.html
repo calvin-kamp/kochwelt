@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
-   
+
     <link rel="stylesheet" href="./assets/fonts/font.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/components/header.css">
     <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/components/hero-banner.css">
 </head>
+
 <body>
     <header class="header" data-js="header">
         <div class="header__wrapper">
@@ -20,13 +23,13 @@
                     </picture>
                 </figure>
             </a>
-    
+
             <button class="header__nav-toggle" data-header-nav-toggle>
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-    
+
             <nav class="header__navigation" data-header-navigation>
                 <ul>
                     <li>
@@ -34,19 +37,19 @@
                             Start
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="./recipe-of-the-day.html">
                             Rezept des Tages
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="./contact.html">
                             Kontakt
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="./imprint.html">
                             Impressum
@@ -56,7 +59,33 @@
             </nav>
         </div>
     </header>
-    
+
+    <main>
+        <section class="hero-banner">
+            <div class="hero-banner__wrapper">
+                <figure class="hero-banner__image">
+                    <picture>
+                        <img src="./assets/images/croissant.jpg" alt="Croissant">
+                    </picture>
+                </figure>
+
+                <div class="hero-banner__content">
+                    <h1>
+                        Französische Croissants
+                    </h1>
+
+                    <p>
+                        Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles Frühstück zaubern.
+                    </p>
+
+                    <button href="javascript:void(0)" class="button button--primary">
+                        Rezept öffnen
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="footer__wrapper">
             <a href="./" class="footer__logo">
@@ -66,7 +95,7 @@
                     </picture>
                 </figure>
             </a>
-            
+
             <nav class="footer__navigation">
                 <ul>
                     <li>
@@ -74,19 +103,19 @@
                             Start
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="./recipe-of-the-day.html">
                             Rezept des Tages
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="./contact.html">
                             Kontakt
                         </a>
                     </li>
-    
+
                     <li>
                         <a href="./imprint.html">
                             Impressum
@@ -100,18 +129,24 @@
                     <ul>
                         <li>
                             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m12.71 6.33A4.77 4.77 0 0 0 19 7.92a4.41 4.41 0 0 1-1.44.41 2.92 2.92 0 0 0 1.12-1.47A5.62 5.62 0 0 1 17 7.5a2.72 2.72 0 0 0-4.63 2.5 7.65 7.65 0 0 1-5.52-2.84 2.87 2.87 0 0 0 .79 3.58 2.94 2.94 0 0 1-1.14-.33 2.68 2.68 0 0 0 2.08 2.68 3.35 3.35 0 0 1-1.14 0A2.67 2.67 0 0 0 9.9 15 5.38 5.38 0 0 1 6 16.08a7 7 0 0 0 4.28 1.23c4.41-.2 7.36-3.31 7.43-7.98Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 24 24">
+                                    <path
+                                        d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m12.71 6.33A4.77 4.77 0 0 0 19 7.92a4.41 4.41 0 0 1-1.44.41 2.92 2.92 0 0 0 1.12-1.47A5.62 5.62 0 0 1 17 7.5a2.72 2.72 0 0 0-4.63 2.5 7.65 7.65 0 0 1-5.52-2.84 2.87 2.87 0 0 0 .79 3.58 2.94 2.94 0 0 1-1.14-.33 2.68 2.68 0 0 0 2.08 2.68 3.35 3.35 0 0 1-1.14 0A2.67 2.67 0 0 0 9.9 15 5.38 5.38 0 0 1 6 16.08a7 7 0 0 0 4.28 1.23c4.41-.2 7.36-3.31 7.43-7.98Z" />
+                                </svg>
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 24 24">
+                                    <path
+                                        d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2Z" />
+                                </svg>
                             </a>
                         </li>
                     </ul>
                 </div>
-    
+
                 <div class="footer__legal">
                     <small>
                         &#169; 2025 Kochwelt
