@@ -1,0 +1,60 @@
+.hero-banner .hero-banner__image {
+	margin-bottom: 16px;
+}
+
+.hero-banner .hero-banner__content {
+	text-wrap: pretty;
+}
+
+.hero-banner .hero-banner__content h1 {
+	margin-bottom: 16px;
+}
+
+.hero-banner .hero-banner__content p {
+	margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+	.hero-banner .hero-banner__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.hero-banner .hero-banner__image {
+		width: 35%;
+		margin-bottom: 0;
+	}
+
+	.hero-banner .hero-banner__content {
+		width: calc(100% - 35% - 32px);
+		text-wrap: balance;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.hero-banner .hero-banner__wrapper {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+	.hero-banner .hero-banner__image {
+		width: 40%;
+		margin-bottom: 0;
+	}
+
+	.hero-banner .hero-banner__content {
+		display: flex;
+		flex-direction: column;
+		width: calc(100% - 40% - 32px);
+		padding-bottom: 32px;
+	}
+
+	.hero-banner .hero-banner__content .button {
+		margin-top: auto;
+		width: fit-content;
+	}
+
+}

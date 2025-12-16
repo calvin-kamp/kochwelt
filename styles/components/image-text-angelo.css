@@ -1,0 +1,42 @@
+
+.pan-wok-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+
+.text-pan-wok-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .pan-wok-section {
+        flex-direction: column;   
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 0 20px;         
+    }
+
+    .text-pan-wok-section {
+        max-width: 100%;          
+    }
+
+    .pan-wok-section img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;         
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pan-wok-section img {
+        max-width: 300px;
+    }
+}
