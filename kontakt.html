@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Kochwelt - Kontakt</title>
+    
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png" sizes="16x16">
+
     <link rel="stylesheet" href="./assets/fonts/font.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/components/angelo-recipe page.css">
+    <link rel="stylesheet" href="./styles/components/header.css">
+    <link rel="stylesheet" href="./styles/components/footer.css">
+    <link rel="stylesheet" href="./styles/components/contact.css">
+
 </head>
+
 <body>
-<header class="header" data-js="header">
+    <header class="header" data-js="header">
         <div class="header__wrapper">
             <a href="./" class="header__logo">
                 <figure>
@@ -28,25 +39,25 @@
             <nav class="header__navigation" data-header-navigation>
                 <ul>
                     <li>
-                        <a href="./index.html" class="link--is-active">
+                        <a href="./index.html">
                             Start
                         </a>
                     </li>
 
                     <li>
-                        <a href="./recipe-of-the-day.html">
+                        <a href="././rezepte/rumpsteak.html">
                             Rezept des Tages
                         </a>
                     </li>
 
                     <li>
-                        <a href="./contact.html">
+                        <a href="./kontakt.html" class="link--is-active">
                             Kontakt
                         </a>
                     </li>
 
                     <li>
-                        <a href="./imprint.html">
+                        <a href="./impressum.html">
                             Impressum
                         </a>
                     </li>
@@ -55,85 +66,80 @@
         </div>
     </header>
 
-<section class="rezept-wrapper">
+    <main>
+        <section class="contact">
+            <div class="contact__wrapper">
 
-  
-  <h2 class="rezept-titel">Bigos (Polnischer Jägereintopf)</h2>
+                <div class="contact__info-text">
+                    <h1>
+                        Kontaktiere uns!
+                    </h1>
 
-  
-  <div class="rezept-bild">
-        <img src="./assets/images/Bigos.jpg"alt="Rezeptbild">
-  </div>
+                    <p>
+                        Du hast eine Frage, Feedback oder eine Rezept-Idee? 
+                        <br>
+                        Schreib uns einfach – wir melden uns so schnell wie möglich zurück.
+                    </p>
 
-  
-  <div class="rezept-infos">
-        <span>⏱ 120 Min.</span>
-        <span>🍽 mittel</span>
-        <span>📅 15.12.2025</span>
-  </div>
+                    <address>
+                        <a href="mailto:info@kochwelt.de">info@kochwelt.de</a>
+                        <a href="tel:+491234567890">+49 123 4567890</a>
+                    </address>
+                </div>
 
-  
-  <div class="portionen">
-        <label for="portionen-input">Zutaten für</label>
-        <input id="portionen-input" type="number" value="4" min="1">
-        <button>Portionen</button>
-  </div>
-
-</section>
-
-
-    <ul class="zutatenliste" >
-        <li>800g Sauerkraut</li>
-        <li>300g Wißkraut (frisch)</li>
-        <li>400g Schweinefleisch (z.B. Nacken oder Schulter)</li>
-        <li>300g Rindfleisch</li>
-        <li>200g geräucherte Wurst (z. B. Krakauer)</li>
-        <li>150 g Speck (durchwachsen)</li>
-        <li>2 Zwiebel(n)</li>
-        <li>2 Knoblauchzehe(n)</li>
-        <li>2 EL Tomatenmark</li>
-        <li>200 ml Fleischbrühe</li>
-        <li>2 Lorbeerblätter</li>
-        <li>5 Wacholderbeeren</li>
-        <li>1 TL Majoran</li>
-        <li>1 TL Paprikapulver (edelsüß)</li>
-        <li>2 EL Pflanzenöl</li>
-        <li>Salz und Pfeffer</li>
-    </ul>
+                <form method="POST" class="contact__form form" data-js="contact-form">
+                    <div class="input">
+                        <label for="name">
+                            <input id="name" name="contactName" type="text" value="" autocomplete="off" data-validation-required>
     
-<Section class="zubereitung" >
-    <h2>Zubereitung</h2>
-    <div>
-        <span>⏱ ca. 30 Minuten Vorbereitung</span>
-        <span>⏱ Gesamtzeit ca. 2 Stunden</span>
-    </div>
-     <div class="zubereitung-wrapper">
-    <div>
-      <p>
-        Sauerkraut gegebenenfalls etwas ausdrücken und grob hacken.
-        Weißkraut fein schneiden. Fleisch in mundgerechte Stücke schneiden,
-        Wurst in Scheiben schneiden.
-      </p>
+                            <span>
+                                Dein Name:*
+                            </span>
 
-      <p>
-        Speck in einem großen Topf auslassen, Zwiebeln glasig anbraten.
-        Knoblauch hinzufügen und das Fleisch portionsweise kräftig anbraten.
-      </p>
+                            <small>
+                                Bitte gib deinen Namen an!
+                            </small>
+                        </label>
+                    </div>
 
-      <p>
-        Wurst, Tomatenmark, Sauerkraut und Weißkraut hinzufügen.
-        Mit Brühe aufgießen, Gewürze zugeben und gut vermengen.
-      </p>
+                    <div class="input">
+                        <label for="mail">
+                            <input type="email" name="contactMail" id="mail" value="" autocomplete="off" data-validation-required>
+    
+                            <span>
+                                Deine E-Mail:*
+                            </span>
 
-      <p>
-        Alles zugedeckt bei niedriger Hitze ca. 90 Minuten schmoren lassen.
-        Zwischendurch umrühren und am Ende abschmecken.
-      </p>
-    </div>
-  </div>
+                            <small>
+                                Bitte gib deine E-Mail Adresse an!
+                            </small>
+                        </label>
+                    </div>
 
-</Section>
- <footer class="footer">
+
+                    <div class="textarea">
+                        <label for="message">
+                            <textarea name="contactMessage" data-value="" id="message" minlength="10" data-validation-required></textarea>
+    
+                            <span>
+                                Deine Nachricht:*
+                            </span>
+
+                            <small>
+                                Bitte schreibe eine Nachricht mit mindestens 10 Zeichen!
+                            </small>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="button button--primary">
+                        Abschicken
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="footer__wrapper">
             <a href="./" class="footer__logo">
                 <figure>
@@ -146,25 +152,25 @@
             <nav class="footer__navigation">
                 <ul>
                     <li>
-                        <a href="./index.html" class="link--is-active">
+                        <a href="./index.html">
                             Start
                         </a>
                     </li>
 
                     <li>
-                        <a href="./recipe-of-the-day.html">
+                        <a href="././rezepte/rumpsteak.html">
                             Rezept des Tages
                         </a>
                     </li>
 
                     <li>
-                        <a href="./contact.html">
+                        <a href="./kontakt.html" class="link--is-active">
                             Kontakt
                         </a>
                     </li>
 
                     <li>
-                        <a href="./imprint.html">
+                        <a href="./impressum.html">
                             Impressum
                         </a>
                     </li>
@@ -202,7 +208,7 @@
             </div>
         </div>
     </footer>
-
-
 </body>
+<script src="./scripts/header.js"></script>
+<script src="./scripts/contact.js"></script>
 </html>

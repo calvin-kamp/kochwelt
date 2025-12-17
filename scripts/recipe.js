@@ -1,4 +1,4 @@
-const recipeOfTheDay = {
+const recipe = {
 
     vars: {
         queries: {
@@ -78,4 +78,4 @@ const recipeOfTheDay = {
 
 }
 
-recipeOfTheDay.init();
+recipe.init();

@@ -208,6 +208,7 @@ html {
     --color-white:              #FFFFFF;
     --color-black:              #000000;
     --color-grey:               #f2f2f2;
+    --color-brown:              #CDC0AC;
 
     --color-primary:            #008000;
     --color-primary-hover:      #006600;
@@ -266,6 +267,7 @@ html {
 /* -------------------------------------------------------- */
 
 body {
+    padding-top: 71px;
     font-family: var(--font-family-body);
     font-size: var(--font-size-body);
     line-height: var(--line-height-body);
@@ -435,6 +437,10 @@ a:hover::before, .link:hover::before, .link--is-active::before {
 }
 
 @media screen and (min-width: 768px) {
+    body {
+        padding-top: 87px;
+    }
+
     header, main, footer {
         padding: 0px 24px;
     }

@@ -15,7 +15,7 @@
 }
 
 .recipe-preview .recipe-preview__headline {
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 	text-align: center;
 }
 
@@ -49,7 +49,6 @@
 
 @media screen and (min-width: 768px) {
 
-	
 	.recipe-preview::before {
 		width: calc(100% + 48px);
 	}
@@ -74,6 +73,10 @@
 	.recipe-preview .recipe-preview__wrapper {
 		max-width: 1440px;
 		margin: 0 auto;
+	}
+
+	.recipe-preview .recipe-preview__headline {
+		margin-bottom: 32px;
 	}
 
 	.recipe-preview .recipe__image figcaption {
