@@ -340,6 +340,18 @@ a, .link {
     transition: all var(--transition-time) ease-in-out;
 }
 
+a.link--no-decoration, .link--no-decoration {
+    transition: none;
+}
+
+a.link--no-decoration:hover, .link--no-decoration:hover {
+    color: var(--color-body-font);
+}
+
+a.link--no-decoration::before, .link--no-decoration::before {
+    content: none;
+}
+
 a:hover, .link:hover, .link--is-active {
     color: var(--color-primary-hover);
 }
