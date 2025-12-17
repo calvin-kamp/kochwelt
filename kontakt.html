@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kochwelt</title>
 
+    <title>Kochwelt - Kontakt</title>
+    
     <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png" sizes="16x16">
@@ -14,9 +15,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/components/header.css">
     <link rel="stylesheet" href="./styles/components/footer.css">
-    <link rel="stylesheet" href="./styles/components/hero-banner.css">
-    <link rel="stylesheet" href="./styles/components/image-text.css">
-    <link rel="stylesheet" href="./styles/components/recipes-preview.css" />
+    <link rel="stylesheet" href="./styles/components/contact.css">
+
 </head>
 
 <body>
@@ -39,19 +39,19 @@
             <nav class="header__navigation" data-header-navigation>
                 <ul>
                     <li>
-                        <a href="./index.html" class="link--is-active">
+                        <a href="./index.html">
                             Start
                         </a>
                     </li>
 
                     <li>
-                        <a href="./rezepte/rumpsteak.html">
+                        <a href="././rezepte/rumpsteak.html">
                             Rezept des Tages
                         </a>
                     </li>
 
                     <li>
-                        <a href="./kontakt.html">
+                        <a href="./kontakt.html" class="link--is-active">
                             Kontakt
                         </a>
                     </li>
@@ -67,102 +67,74 @@
     </header>
 
     <main>
-        <section class="hero-banner">
-            <div class="hero-banner__wrapper">
-                <figure class="hero-banner__image">
-                    <picture>
-                        <img src="./assets/images/steak.jpg" alt="Steak">
-                    </picture>
-                </figure>
+        <section class="contact">
+            <div class="contact__wrapper">
 
-                <div class="hero-banner__content">
+                <div class="contact__info-text">
                     <h1>
-                        Rumpsteak vom Grill
+                        Kontaktiere uns!
                     </h1>
 
                     <p>
-                        Saftige Steaks mit perfektem Branding und vollem Aroma: In einer feinen Marinade aus Olivenöl, Zitrone und Knoblauch ziehen sie über Nacht durch, bevor sie auf dem heißen Grill erst scharf angegrillt und dann sanft indirekt gegart werden. Mit ein paar Profi-Tipps zu Temperatur, Gargrad und Ruhezeit gelingt dir ein Steak, das außen rösch und innen herrlich zart ist.
+                        Du hast eine Frage, Feedback oder eine Rezept-Idee? 
+                        <br>
+                        Schreib uns einfach – wir melden uns so schnell wie möglich zurück.
                     </p>
 
-                    <a href="./rezepte/rumpsteak.html" class="button button--primary">
-                        Rezept öffnen
-                    </a>
+                    <address>
+                        <a href="mailto:info@kochwelt.de">info@kochwelt.de</a>
+                        <a href="tel:+491234567890">+49 123 4567890</a>
+                    </address>
                 </div>
-            </div>
-        </section>
 
-        <section class="recipe-preview">
-            <div class="recipe-preview__wrapper">
+                <form method="POST" class="contact__form form" data-js="contact-form">
+                    <div class="input">
+                        <label for="name">
+                            <input id="name" name="contactName" type="text" value="" autocomplete="off" data-validation-required>
     
-                <h2 class="recipe-preview__headline">
-                    Lust auf was Neues?
-                </h2>
-    
-                <ul class="recipe-preview__list">
-                    <li class="recipe">
-                        <a class="link--no-decoration" href="./rezepte/blumenkohlauflauf.html">
-                            <figure class="recipe__image">
-                                <picture>
-                                    <img src="./assets/images/cauliflower-casserole.jpg" alt="Blumenkohlauflauf mit Kartoffeln in einer Auflaufform" />
-                                </picture>
-                                
-                                <figcaption class="recipe__title">
-                                    Blumenkohlauflauf mit Kartoffeln
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-    
-    
-                    <li class="recipe">
-                        <a class="link--no-decoration" href="./rezepte/bigos.html">
-                            <figure class="recipe__image">
-                                <picture>
-                                    <img src="./assets/images/bigos.jpg" alt="Bigos (Polnischer Jägereintopf) in einer Schale" />
-                                </picture>
-    
-                                <figcaption class="recipe__title">
-                                    Bigos (Polnischer Jägereintopf)
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-    
-    
-                    <li class="recipe">
-                        <a class="link--no-decoration" href="./rezepte/pierogi.html">
-                            <figure class="recipe__image">
-                                <picture>
-                                    <img src="./assets/images/pierogi.jpg" alt="Pierogi (Polnische Teigtaschen) in einer Schale" />
-                                </picture>
-    
-                                <figcaption class="recipe__title">
-                                    Pierogi (Polnische Teigtaschen)
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                            <span>
+                                Dein Name:*
+                            </span>
 
-        <section class="image-text">
-            <div class="image-text__wrapper">
+                            <small>
+                                Bitte gib deinen Namen an!
+                            </small>
+                        </label>
+                    </div>
 
-                <h2 class="image-text__headline">
-                    Pfanne vs. Wok - Was ist besser?
-                </h2>
+                    <div class="input">
+                        <label for="mail">
+                            <input type="email" name="contactMail" id="mail" value="" autocomplete="off" data-validation-required>
+    
+                            <span>
+                                Deine E-Mail:*
+                            </span>
 
-                <figure class="image-text__image">
-                    <picture>
-                        <img src="./assets/images/wok.jpg" alt="Ein Wok mit frischem Gemüse, das auf einem Grill zubereitet wird">
-                    </picture>
-                </figure>
+                            <small>
+                                Bitte gib deine E-Mail Adresse an!
+                            </small>
+                        </label>
+                    </div>
 
 
-                <p class="image-text__text">
-                    Ein Wok eignet sich besonders für sehr heißes, schnelles Anbraten und asiatische Gerichte, weil seine Form hohe Temperaturen bündelt und Bewegung im Kochgut ermöglicht. Eine Pfanne dagegen bietet eine gleichmäßige, breite Hitze und ist damit für die meisten alltäglichen Gerichte besser geeignet. Welche Option „besser“ ist, hängt also davon ab, ob du eher schnelle Stir-Frys oder klassische Bratgerichte kochst.
-                </p>
+                    <div class="textarea">
+                        <label for="message">
+                            <textarea name="contactMessage" data-value="" id="message" minlength="10" data-validation-required></textarea>
+    
+                            <span>
+                                Deine Nachricht:*
+                            </span>
+
+                            <small>
+                                Bitte schreibe eine Nachricht mit mindestens 10 Zeichen!
+                            </small>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="button button--primary">
+                        Abschicken
+                    </button>
+                </form>
             </div>
         </section>
     </main>
@@ -180,7 +152,7 @@
             <nav class="footer__navigation">
                 <ul>
                     <li>
-                        <a href="./index.html" class="link--is-active">
+                        <a href="./index.html">
                             Start
                         </a>
                     </li>
@@ -192,7 +164,7 @@
                     </li>
 
                     <li>
-                        <a href="./kontakt.html">
+                        <a href="./kontakt.html" class="link--is-active">
                             Kontakt
                         </a>
                     </li>
@@ -238,4 +210,5 @@
     </footer>
 </body>
 <script src="./scripts/header.js"></script>
+<script src="./scripts/contact.js"></script>
 </html>
