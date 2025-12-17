@@ -53,13 +53,16 @@
 
 .header .header__navigation {
     position: fixed;
-    top: 54px;
+    top: 71px;
     right: 0;
     transform: translateX(100%);
     width: 100%;
-    height: calc(100vh - 54px);
+    max-width: 360px;
+    height: calc(100vh - 71px);
+    background-color: var(--color-white);
     text-align: center;
     transition: all var(--transition-time) ease-in-out;
+    z-index: 1;
 }
 
 .header .header__navigation ul {
@@ -97,6 +100,15 @@
     .header .header__wrapper {
         padding: 16px 0;
     }
+
+    .header .header__navigation {
+        top: 87px;
+        height: calc(100vh - 87px);
+    }
+
+    .header .header__navigation ul {
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -114,6 +126,7 @@
         position: static;
         transform: translateX(0);
         width: auto;
+        max-width: none;
         height: auto;
     }
 

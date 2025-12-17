@@ -1,0 +1,27 @@
+.imprint h1 {
+  margin-bottom: 16px;
+}
+
+.imprint h2 {
+  margin-bottom: 8px;
+}
+
+.imprint address {
+  margin-bottom: 24px;
+}
+
+.imprint p {
+  margin-bottom: 24px;
+  text-wrap: pretty;
+}
+
+.imprint p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:1280px) {
+  .imprint .imprint__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kochwelt</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="./assets/fonts/font.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/components/header.css">
-    <link rel="stylesheet" href="./styles/components/footer.css">
-    <link rel="stylesheet" href="./styles/components/hero-banner.css">
-    <link rel="stylesheet" href="./styles/components/image-text.css">
-    <link rel="stylesheet" href="./styles/components/recipes-preview.css" />
+    <link rel="stylesheet" href="./styles/components/angelo-recipe page.css">
 </head>
-
 <body>
-    <header class="header" data-js="header">
+<header class="header" data-js="header">
         <div class="header__wrapper">
             <a href="./" class="header__logo">
                 <figure>
@@ -62,108 +55,85 @@
         </div>
     </header>
 
-    <main>
-        <section class="hero-banner">
-            <div class="hero-banner__wrapper">
-                <figure class="hero-banner__image">
-                    <picture>
-                        <img src="./assets/images/croissant.jpg" alt="Croissant">
-                    </picture>
-                </figure>
+<section class="rezept-wrapper">
 
-                <div class="hero-banner__content">
-                    <h1>
-                        Französische Croissants
-                    </h1>
+  
+  <h2 class="rezept-titel">Bigos (Polnischer Jägereintopf)</h2>
 
-                    <p>
-                        Schmackhafte Croissants können auch zu Hause sehr einfach gebacken werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles Frühstück zaubern.
-                    </p>
+  
+  <div class="rezept-bild">
+        <img src="./assets/images/Bigos.jpg"alt="Rezeptbild">
+  </div>
 
-                    <button href="javascript:void(0)" class="button button--primary">
-                        Rezept öffnen
-                    </button>
-                </div>
-            </div>
-        </section>
+  
+  <div class="rezept-infos">
+        <span>⏱ 120 Min.</span>
+        <span>🍽 mittel</span>
+        <span>📅 15.12.2025</span>
+  </div>
 
-        <section class="recipe-preview">
-            <div class="recipe-preview__wrapper">
+  
+  <div class="portionen">
+        <label for="portionen-input">Zutaten für</label>
+        <input id="portionen-input" type="number" value="4" min="1">
+        <button>Portionen</button>
+  </div>
+
+</section>
+
+
+    <ul class="zutatenliste" >
+        <li>800g Sauerkraut</li>
+        <li>300g Wißkraut (frisch)</li>
+        <li>400g Schweinefleisch (z.B. Nacken oder Schulter)</li>
+        <li>300g Rindfleisch</li>
+        <li>200g geräucherte Wurst (z. B. Krakauer)</li>
+        <li>150 g Speck (durchwachsen)</li>
+        <li>2 Zwiebel(n)</li>
+        <li>2 Knoblauchzehe(n)</li>
+        <li>2 EL Tomatenmark</li>
+        <li>200 ml Fleischbrühe</li>
+        <li>2 Lorbeerblätter</li>
+        <li>5 Wacholderbeeren</li>
+        <li>1 TL Majoran</li>
+        <li>1 TL Paprikapulver (edelsüß)</li>
+        <li>2 EL Pflanzenöl</li>
+        <li>Salz und Pfeffer</li>
+    </ul>
     
-                <h2 class="recipe-preview__headline">
-                    Lust auf was Neues?
-                </h2>
-    
-                <ul class="recipe-preview__list">
-                    <li class="recipe">
-                        <a class="link--no-decoration" href="./rezepte/blumenkohlauflauf.html">
-                            <figure class="recipe__image">
-                                <picture>
-                                    <img src="./assets/images/croissant.jpg" alt="Blumenkohlauflauf mit Kartoffeln in einer Auflaufform" />
-                                </picture>
-                                
-                                <figcaption class="recipe__title">
-                                    Blumenkohlauflauf mit Kartoffeln
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-    
-    
-                    <li class="recipe">
-                        <a class="link--no-decoration" href="./rezepte/bigos.html">
-                            <figure class="recipe__image">
-                                <picture>
-                                    <img src="./assets/images/bigos.jpg" alt="Bigos (Polnischer Jägereintopf) in einer Schale" />
-                                </picture>
-    
-                                <figcaption class="recipe__title">
-                                    Bigos (Polnischer Jägereintopf)
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-    
-    
-                    <li class="recipe">
-                        <a class="link--no-decoration" href="./rezepte/pierogi">
-                            <figure class="recipe__image">
-                                <picture>
-                                    <img src="./assets/images/pierogi.jpg" alt="Pierogi (Polnische Teigtaschen) in einer Schale" />
-                                </picture>
-    
-                                <figcaption class="recipe__title">
-                                    Pierogi (Polnische Teigtaschen)
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+<Section class="zubereitung" >
+    <h2>Zubereitung</h2>
+    <div>
+        <span>⏱ ca. 30 Minuten Vorbereitung</span>
+        <span>⏱ Gesamtzeit ca. 2 Stunden</span>
+    </div>
+     <div class="zubereitung-wrapper">
+    <div>
+      <p>
+        Sauerkraut gegebenenfalls etwas ausdrücken und grob hacken.
+        Weißkraut fein schneiden. Fleisch in mundgerechte Stücke schneiden,
+        Wurst in Scheiben schneiden.
+      </p>
 
-        <section class="image-text">
-            <div class="image-text__wrapper">
+      <p>
+        Speck in einem großen Topf auslassen, Zwiebeln glasig anbraten.
+        Knoblauch hinzufügen und das Fleisch portionsweise kräftig anbraten.
+      </p>
 
-                <h2 class="image-text__headline">
-                    Pfanne vs. Wok - Was ist besser?
-                </h2>
+      <p>
+        Wurst, Tomatenmark, Sauerkraut und Weißkraut hinzufügen.
+        Mit Brühe aufgießen, Gewürze zugeben und gut vermengen.
+      </p>
 
-                <figure class="image-text__image">
-                    <picture>
-                        <img src="./assets/images/wok.jpg" alt="Ein Wok mit frischem Gemüse, das auf einem Grill zubereitet wird">
-                    </picture>
-                </figure>
+      <p>
+        Alles zugedeckt bei niedriger Hitze ca. 90 Minuten schmoren lassen.
+        Zwischendurch umrühren und am Ende abschmecken.
+      </p>
+    </div>
+  </div>
 
-
-                <p class="image-text__text">
-                    Ein Wok eignet sich besonders für sehr heißes, schnelles Anbraten und asiatische Gerichte, weil seine Form hohe Temperaturen bündelt und Bewegung im Kochgut ermöglicht. Eine Pfanne dagegen bietet eine gleichmäßige, breite Hitze und ist damit für die meisten alltäglichen Gerichte besser geeignet. Welche Option „besser“ ist, hängt also davon ab, ob du eher schnelle Stir-Frys oder klassische Bratgerichte kochst.
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
+</Section>
+ <footer class="footer">
         <div class="footer__wrapper">
             <a href="./" class="footer__logo">
                 <figure>
@@ -232,6 +202,7 @@
             </div>
         </div>
     </footer>
+
+
 </body>
-<script src="./scripts/header.js"></script>
 </html>
