@@ -105,9 +105,8 @@
     }
 
     .footer .footer__logo {
-        display: block;
-        width: 100%;
-        margin-bottom: 32px;
+        display: inline-block;
+        margin: 0 50% 32px 0;
     }
 
     .footer .footer__logo::before {
