@@ -207,7 +207,7 @@ html {
     /* Color Scheme */
     --color-white:              #FFFFFF;
     --color-black:              #000000;
-    --color-grey:               #cccccc;
+    --color-grey:               #f2f2f2;
 
     --color-primary:            #008000;
     --color-primary-hover:      #006600;
@@ -321,6 +321,7 @@ button, .button {
     line-height: 44px;
     border: 1px solid transparent;
     transition: all var(--transition-time) ease-in-out;
+    cursor: pointer;
 }
 
 .button--primary {
