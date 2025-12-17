@@ -8,7 +8,9 @@ const header = {
 
         classes: {
             navOpen:                'header--navigation-open'
-        }
+        },
+
+        windowWidth:                0
     },
 
     init() {
@@ -19,13 +21,29 @@ const header = {
 
     addEventTrigger() {
 
+        const $header = document.querySelector(this.vars.queries.header);
         const $navToggle = document.querySelector(this.vars.queries.navToggle);
 
-        $navToggle.addEventListener('click', () => {
+        $navToggle.addEventListener('click', (e) => {
 
+            e.stopPropagation();
             this.toggleNavigation();
 
         })
+
+        document.body.addEventListener('click', (e) => {
+
+            if(!$header) {
+                return;
+            } 
+
+            if(e.target.closest(this.vars.queries.header)) {
+                return;
+            }
+
+            $header.classList.remove(this.vars.classes.navOpen);
+
+        });
 
     },
 
