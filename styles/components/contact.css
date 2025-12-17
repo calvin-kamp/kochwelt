@@ -1,0 +1,73 @@
+.contact .contact__info-text {
+    margin-bottom: 16px;
+    text-wrap: pretty;
+}
+
+.contact .contact__info-text h1 {
+    margin-bottom: 16px;
+}
+
+.contact .contact__info-text p {
+    margin-bottom: 16px;
+}
+
+.contact .contact__info-text a {
+    display: inline-block;
+    margin-right: 50%;
+    margin-bottom: 8px;
+}
+
+.contact .contact__info-text a:last-of-type {
+    margin-bottom: 0;
+}
+
+.contact .contact__form {
+    padding: 44px 16px;
+    background-color: var(--color-grey);
+    border-radius: var(--border-radius);
+}
+
+.contact .contact__form button {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact .contact__info-text {
+        width: 75%;
+        margin: 0 auto 32px;
+    }
+
+    .contact .contact__form {
+        width: 75%;
+        padding: 64px 24px;
+        margin: 0 auto;
+    }
+
+    .contact .contact__form button {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .contact .contact__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .contact .contact__info-text {
+        width: 50%;
+
+    }
+
+    .contact .contact__info-text a {
+        margin-bottom: 4px;
+    }
+
+    .contact .contact__form {
+        width: 50%;
+    }
+}
